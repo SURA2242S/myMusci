@@ -17,7 +17,7 @@ header .master-play .wave .wave1 {
   height: 10px;
   background-color: #36e2ec;
   margin-right: 3px;
-  animation: unset;
+  /* animation: unset; */
 }
 header .master-play .wave .wave1:nth-child(2) {
   height: 13px;
