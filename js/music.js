@@ -1,145 +1,144 @@
-const music = new Audio("audio/Dilber.mp3");
+const music = new Audio("Audio/1.mp3");
 // music.play();
 const songs = [
   {
     id: 1,
     songName: `kesariya<br>
         <div class="subtitle">Arijit Singh</div>`,
-    poster:
-      "https://cdn.siasat.com/wp-content/uploads/2022/07/New-Project-73.jpg",
+    poster: "Img/1.jpg",
   },
   {
     id: 2,
     songName: `Mann meri jaan<br>
         <div class="subtitle">King</div>`,
-    poster: "https://i.ytimg.com/vi/VuG7ge_8I2Y/hqdefault.jpg",
+    poster: "Img/2.jpg",
   },
   {
     id: 3,
     songName: `Grind<br>
         <div class="subtitle">Emiway Bantai</div>`,
-    poster: "https://i.ytimg.com/vi/_JXQ2Z4XB2U/hqdefault.jpg",
+    poster: "Img/3.jpg",
   },
   {
     id: 4,
     songName: `Firse Machayenge<br>
         <div class="subtitle">Emiway Bantai</div>`,
-    poster: "https://i.ytimg.com/vi/zaCbuB3w0kg/maxresdefault.jpg",
+    poster: "Img/4.jpg",
   },
   {
     id: 5,
     songName: `KR L$DA SIGN<br>
         <div class="subtitle">Emiway Bantai</div>`,
-    poster:
-      "https://www.lyricsbell.com/wp-content/uploads/2022/06/kr-lsda-sign-emiway.jpg",
+    poster: "Img/5.jpg",
   },
   {
     id: 6,
     songName: `Lil Bunty<br>
         <div class="subtitle">KR$NA</div>`,
-    poster: "https://i.ytimg.com/vi/SenClIIneMI/maxresdefault.jpg",
+    poster: "Img/6.jpg",
   },
   {
     id: 7,
-    songName: `kesariya<br>
-        <div class="subtitle">Arijit Singh</div>`,
-    poster:
-      "https://cdn.siasat.com/wp-content/uploads/2022/07/New-Project-73.jpg",
+    songName: `Opps<br>
+        <div class="subtitle">King</div>`,
+    poster: "Img/7.jpg",
   },
   {
     id: 8,
-    songName: `kesariya<br>
-        <div class="subtitle">Arijit Singh</div>`,
-    poster:
-      "https://cdn.siasat.com/wp-content/uploads/2022/07/New-Project-73.jpg",
+    songName: `Khatam hua wande<br>
+        <div class="subtitle">Emiway Bantai</div>`,
+    poster: "Img/8.jpg",
   },
 
   {
     id: 9,
-    songName: `kesariya<br>
-        <div class="subtitle">Arijit Singh</div>`,
-    poster:
-      "https://cdn.siasat.com/wp-content/uploads/2022/07/New-Project-73.jpg",
+    songName: `Tauba<br>
+        <div class="subtitle">Badsha</div>`,
+    poster: "Img/9.jpg",
   },
   {
     id: 10,
-    songName: `kesariya<br>
-        <div class="subtitle">Arijit Singh</div>`,
-    poster:
-      "https://cdn.siasat.com/wp-content/uploads/2022/07/New-Project-73.jpg",
+    songName: `Ring Ring<br>
+        <div class="subtitle">Emiway and Mimax</div>`,
+    poster: "Img/10.jpg",
   },
   {
     id: 11,
-    songName: `Dilber<br>
-            <div class="subtitle">Neha kakkar</div>`,
-    poster: "img/9.jpg",
+    songName: `Besharam Rang
+     Caralisa Monteiro, Shilpa Rao, and Vishal–Shekhar
+    <br>
+            <div class="subtitle">Caralisa Monteiro, Shilpa Rao, and Vishal–Shekhar</div>`,
+    poster: "Img/11.jpg",
   },
   {
     id: 12,
-    songName: `On and on<br>
-            <div class="subtitle">Alen walker</div>`,
-    poster: "img/1.jpg",
+    songName: `Dilbar<br>
+            <div class="subtitle"> Asees Kaur, Dhvani Bhanushali, Neha Kakkar, Ikka Singh</div>`,
+    poster: "Img/12.jpg",
   },
   {
     id: 13,
-    songName: `Lut gaya<br>
-            <div class="subtitle">jubin Nautiyal</div>`,
-    poster: "img/15.jpg",
+    songName: `Pasoori<br>
+            <div class="subtitle">Ali Sethi and Shae Gill</div>`,
+    poster: "Img/13.jpg",
   },
   {
     id: 14,
-    songName: `Pasoori<br>
-            <div class="subtitle">Ali Sethi and Shae Gill
+    songName: `On and On<br>
+            <div class="subtitle">
+            Stephen Bishop
             </div>`,
-    poster: "img/18.jpg",
+    poster: "Img/14.jpg",
   },
   {
     id: 15,
-    songName: `Meri jindegi<br>
+    songName: `Suna Hai<br>
             <div class="subtitle">Jubin Nautiyal</div>`,
-    poster: "img/16.jpg",
+    poster: "Img/15.jpg",
   },
   {
     id: 16,
-    songName: `Suna hai<br>
-            <div class="subtitle">Jubin Nautiyal</div>`,
-    poster: "img/8.jpg",
+    songName: `Vaste<br>
+            <div class="subtitle">Dhvani Bhanushali</div>`,
+    poster: "Img/16.jpg",
   },
   {
     id: 17,
-    songName: `vaste<br>
-                <div class="subtitle">Dhvani Bhanushali</div>`,
-    poster:
-      "https://www.lyricsstop.com/wp-content/uploads/2020/03/Vaaste-Lyrics.jpg",
+    songName: `Meri jindegi<br>
+                <div class="subtitle">Jubin Nautiyal</div>`,
+    poster: "Img/17.jpg",
   },
   {
     id: 18,
-    songName: `Barishain<br>
-                    <div class="subtitle">Arijit Singh</div>`,
-    poster:
-      "https://cdn.siasat.com/wp-content/uploads/2022/07/New-Project-73.jpg",
+    songName: `Lut gaya<br>
+                    <div class="subtitle">Jubin Nautiyal</div>`,
+    poster: "Img/18.jpg",
   },
 
   {
     id: 19,
-    songName: `kesariya<br>
-            <div class="subtitle">Arijit Singh</div>`,
-    poster:
-      "https://cdn.siasat.com/wp-content/uploads/2022/07/New-Project-73.jpg",
+    songName: `Agar tum sath ho<br>
+            <div class="subtitle">Arijit Singh and Alka yagnik</div>`,
+    poster: "Img/19.jpg",
   },
   {
     id: 20,
-    songName: `kesariya<br>
-            <div class="subtitle">Arijit Singh</div>`,
-    poster:
-      "https://cdn.siasat.com/wp-content/uploads/2022/07/New-Project-73.jpg",
+    songName: `Baris hain<br>
+            <div class="subtitle">Atif Aslam</div>`,
+    poster: "Img/20.jpg",
   },
   {
     id: 21,
-    songName: `kesariya<br>
-            <div class="subtitle">Arijit Singh</div>`,
-    poster:
-      "https://cdn.siasat.com/wp-content/uploads/2022/07/New-Project-73.jpg",
+    songName: `Zarori tha<br>
+            <div class="subtitle"Rahat Fateh Ali Khan
+            ></div>`,
+    poster: "Img/21.jpg",
+  },
+  {
+    id: 22,
+    songName: `Lagdi Lahore di<br>
+            <div class="subtitle">Guru Randhawa</div>`,
+    poster: "Img/22.jpg",
   },
 ];
 Array.from(document.getElementsByClassName("songItem")).forEach((e, i) => {
