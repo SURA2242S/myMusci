@@ -1,1 +1,1 @@
-# myMusci
+# myMusic
