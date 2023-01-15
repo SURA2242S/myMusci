@@ -11,7 +11,7 @@ const songs = [
     id: 2,
     songName: `Mann meri jaan<br>
         <div class="subtitle">King</div>`,
-    poster: "Img/2a.jpg",
+    poster: "Img/2.jpg",
   },
   {
     id: 3,
