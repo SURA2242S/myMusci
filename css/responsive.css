@@ -1,0 +1,324 @@
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .menu-side {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 250px;
+        height: 100vh;
+        transition: 0.4s;
+        z-index: 999;
+    }
+
+    .menu-side.active {
+        left: 0;
+    }
+}
+
+/* ...existing code... */
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    header {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .song-side::before {
+        height: 200px;
+        background-size: cover;
+    }
+
+    header .song-side nav {
+        padding: 10px 0;
+    }
+
+    header .song-side nav ul li {
+        font-size: 11px;
+        margin-right: 15px;
+    }
+
+    header .song-side nav .search input {
+        width: 150px;
+    }
+
+    header .song-side .content h1 {
+        font-size: 20px;
+    }
+
+    header .song-side .content p {
+        font-size: 11px;
+    }
+
+    header .song-side .content .buttons button {
+        width: 110px;
+        font-size: 12px;
+    }
+
+    header .song-side .popular-song .pop-song li {
+        min-width: 90px;
+        height: 130px;
+    }
+
+    header .song-side .popular-song li .img-play {
+        width: 90px;
+        height: 90px;
+    }
+
+    header .menu-side {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 250px;
+        height: 100vh;
+        z-index: 999;
+        transition: 0.3s ease-in-out;
+        background: #111727;
+    }
+
+    header .menu-side.active {
+        left: 0;
+    }
+
+    header .song-side {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        margin: 5px 0;
+        transition: 0.3s ease;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    header .master-play .wave {
+        display: none;
+    }
+
+    header .master-play h5 {
+        width: 100px;
+        font-size: 11px;
+    }
+
+    header .master-play .icons {
+        margin: 0px 10px 0px 20px;
+    }
+
+    header .master-play .vol {
+        display: none;
+    }
+
+    header .master-play .bar {
+        width: 45%;
+    }
+
+    header .master-play span {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .song-side nav ul {
+        display: none;
+    }
+
+    header .song-side nav .search {
+        width: 150px;
+    }
+
+    header .song-side .content {
+        padding-top: 10px;
+    }
+
+    header .song-side .popular-song .h4 h4,
+    header .song-side .popular-artists .h4 h4 {
+        font-size: 16px;
+    }
+
+    header .song-side .popular-song .pop-song li {
+        min-width: 80px;
+        height: 120px;
+    }
+
+    header .song-side .popular-song li .img-play {
+        width: 80px;
+        height: 80px;
+    }
+
+    header .song-side .popular-artists .item li {
+        min-width: 50px;
+        height: 50px;
+    }
+
+    header .song-side .content .buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    header .song-side .content .buttons button {
+        width: 100px;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    header .menu-side .menu-song li h6 {
+        width: 120px;
+    }
+
+    header .menu-side h1 {
+        font-size: 18px;
+    }
+
+    .menu-side .playlist h4 {
+        font-size: 12px;
+    }
+
+    header .menu-side .menu-song li img {
+        width: 25px;
+        height: 25px;
+        margin-left: 15px;
+    }
+
+    header .master-play {
+        padding: 0px 5px;
+    }
+
+    header .master-play img {
+        width: 30px;
+        height: 30px;
+    }
+
+    header .master-play h5 {
+        width: 80px;
+        margin-left: 5px;
+    }
+
+    header .master-play .icons {
+        margin: 0px 5px;
+        font-size: 16px;
+    }
+
+    header .master-play .icons .bi {
+        margin: 0px 3px;
+    }
+
+    header .master-play .bar {
+        width: 40%;
+        margin: 0px 5px;
+    }
+
+    header .master-play #currentstart,
+    header .master-play #currentend {
+        margin: 0px 5px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    header .menu-side {
+        width: 220px;
+    }
+
+    header .menu-side .menu-song li h6 {
+        width: 100px;
+    }
+
+    @media screen and (max-width: 380px) {
+        header .song-side nav .search {
+            width: 120px;
+        }
+
+        header .song-side .popular-song .pop-song li {
+            min-width: 70px;
+            height: 110px;
+        }
+
+        header .song-side .popular-song li .img-play {
+            width: 70px;
+            height: 70px;
+        }
+
+        header .song-side .popular-artists .item li {
+            min-width: 45px;
+            height: 45px;
+        }
+    }
+
+    header .master-play h5 {
+        display: none;
+    }
+
+    header .master-play .bar {
+        width: 50%;
+    }
+
+    header .master-play .icons .suffle {
+        font-size: 14px;
+    }
+
+    header .master-play .icons #download-music {
+        display: none;
+    }
+}
